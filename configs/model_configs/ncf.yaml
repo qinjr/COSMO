@@ -1,0 +1,15 @@
+lastfm: {
+  model_name: ncf,
+  embed_dim: 64,
+  hidden_dims: [200, 80],
+  dropout: 0.2,
+  use_hist: False
+}
+
+hvideo: {
+  model_name: ncf,
+  embed_dim: 64,
+  hidden_dims: [200, 80],
+  dropout: 0.2,
+  use_hist: False
+}

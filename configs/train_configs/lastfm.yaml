@@ -1,0 +1,51 @@
+train_mode: refine
+loss_type: ll
+sn_loss_type: BPR
+learner: adam
+learning_rate: 5e-5
+l2_norm: 0
+weight_decay: 1e-4
+max_epochs: 100
+eval_step: 1
+clip_grad_norm: {'max_norm': 5, 'norm_type': 2}
+train_batch_size: 1024
+eval_batch_size: 1024
+device: 'cuda:0'
+checkpoint_dir: saved_models/ind
+eval_mode: all
+atten_study: True
+list_len: 50
+topks: [1,5,10]
+num_trials: 2  
+continue_metric: AUC
+eval_metric_bigger: True
+seed: 1111
+reproducibility: False
+lamda1: 1
+lamda2: 0
+lamda3: 0
+
+tags_num: 1
+have_es: False
+batch_neg_size: 5
+
+
+user_f_pos: [0,1,2,3]
+item_f_pos: [4,5]
+sn_f_pos: [6]
+
+have_hist: True
+
+hist_test_dict: data/lastfm/input_data/test_hist_dict.pkl
+
+train_set: data/lastfm/input_data/train_set_with_two_snid_and_hist_labels.pkl
+
+test_set: data/lastfm/input_data/test_set.pkl
+
+
+ckpt_file: saved_models/ind/cosmo2-lastfm-Aug-01-2022_18-32-36.pth
+
+gauc: True
+
+user_is_single_dict: data/lastfm/input_data/user_is_single_dict.pkl
+

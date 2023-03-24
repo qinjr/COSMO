@@ -1,0 +1,10 @@
+# important meta data
+dataset_name: hvideo
+user_num_fields: 1
+item_num_fields: 1
+sn_num_fields: 1
+num_fields: 2
+have_hist: False
+vocabulary_size: 50000
+max_session_len: 10
+max_hist_len: 20

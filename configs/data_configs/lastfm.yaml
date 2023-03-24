@@ -1,0 +1,10 @@
+# important meta data
+dataset_name: lastfm
+user_num_fields: 4
+item_num_fields: 2
+sn_num_fields: 1
+num_fields: 6
+have_hist: False
+vocabulary_size: 1190000
+max_session_len: 30
+max_hist_len: 50
